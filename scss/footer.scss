@@ -1,0 +1,56 @@
+footer {
+  background: $footer-bg-color;
+  width: 100%;
+  height: 124px;
+  display: flex;
+  justify-content: space-between;
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 139px;
+
+    .facebook-2 {
+      background: url("../images/fb-mazas.png");
+      width: 11px;
+      height: 20px;
+    }
+
+    .instagram-2 {
+      background: url("../images/ig-mazas.png");
+      width: 20px;
+      height: 20px;
+    }
+
+    .twitter-2 {
+      background: url("../images/tw-mazas.png");
+      width: 24px;
+      height: 20px;
+    }
+
+    .pinterest-2 {
+      background: url("../images/pi-mazas.png");
+      width: 16px;
+      height: 20px;
+    }
+
+    .wifi-2 {
+      background: url("../images/wifi-mazas.png");
+      width: 25px;
+      height: 25px;
+      background-size: cover;
+    }
+  }
+
+  .copyright {
+    margin-right: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: $copyright-color;
+    opacity: 0.5;
+  }
+}

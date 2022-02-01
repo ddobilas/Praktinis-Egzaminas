@@ -1,0 +1,67 @@
+header {
+  background: $bg-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navLogo {
+    background-image: url("../images/logo-1.png");
+    width: 119px;
+    height: 52px;
+    background-size: cover;
+    margin: 15px 0 15px 10%;
+  }
+
+  .hamburgerMenu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    right: 10%;
+    top: 15px;
+    position: absolute;
+    height: 52px;
+
+    .hamburgerLine {
+      width: 30px;
+      height: 3px;
+      border-radius: 20px;
+      background-color: $text-color;
+      opacity: 0.69;
+    }
+  }
+
+  nav {
+    margin-right: 10%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        list-style-type: none;
+        color: $text-color;
+        opacity: 0.69;
+        font-size: 14px;
+        margin: 0 20px;
+        padding: 26px 0;
+
+        a {
+          text-decoration: none;
+          color: $text-color;
+        }
+      }
+
+      li:hover {
+        opacity: 1;
+        border-bottom: $meniu-hover-color 3px solid;
+      }
+    }
+  }
+  .hidden {
+    display: flex;
+  }
+
+  .hamburgerMenu:hover > .hamburgerLine {
+    opacity: 1;
+  }
+}
